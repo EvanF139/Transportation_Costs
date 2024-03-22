@@ -1,0 +1,22 @@
+Using cross reference sheet previously shown, played around with the Indirect, Row(), and Column() functions.
+This allowed me to only have to enter the data from COUNTY to COUNTY once and it was reflected on its counterpart in the other part of the Excel sheet.
+Mainly just trial and error until I got it to work.
+"0" line will refer to the top left to bottom right diagonal line created by ATLANTIC - ATLANTIC being 0, BERGEN - BERGEN being 0, etc.
+
+ATLANTIC COUNTY - ATLANTIC COUNTY BEING CELL B2 FOR REFERENCE:
+
+I wanted the measurement of Atlantic - Bergen to be reflected both in cells B3 and C2, with C2 being the reflected cell.
+C2=INDIRECT("B" & ROW() + COLUMN() - 2)
+
+I then copy and pasted that formula to the cell DOWN 1, RIGHT 1 and would adjust accordingly: C2=INDIRECT("B" & ROW() + COLUMN() - 2)
+                                                                                              D3=INDIRECT("C" & ROW() + COLUMN() - 3)
+
+This allowed me to paste the distance from GMAPs to the cells to the bottom left of the "0" line and have the values be reflected to the top right.
+
+SMALL CLIP:
+
+	            Atlantic 	Bergen	Burlington	Camden
+Atlantic 	      0	       134     	33.1	     38.1
+Bergen	       134	      0	      91.5	     99.5
+Burlington	   33.1    	91.5      	0	       20.8
+Camden	       38.1	    99.5     	20.8      	0
