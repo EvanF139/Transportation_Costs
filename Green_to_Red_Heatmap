@@ -1,0 +1,20 @@
+# Driving Miles = Google Maps provided driving distance between "{Name_1} County, New Jersey" to "{Name_2} County, New Jersey"
+# Reefer Rate = cost per mile to ship produce in "Northeast" as determined by "USA Refrigerated Rate"
+
+# Adjusting the map with the cleaned and prepped data of "df_with_cost_rounded" of:
+#         Driving Miles * Reefer Rate
+
+# fit the font size to the size of the grids
+annot_font_size = 8
+
+# Aim was to create easy visualization of how costly it would be to ship between counties.
+# build the heat map
+plt.figure(figsize=(12, 8))
+sns.heatmap(df_with_cost_rounded, annot=True, cmap='RdYlGn_r', fmt=".2f", annot_kws={"size": annot_font_size})
+plt.title('Cost to Drive between New Jersey Counties')
+plt.xlabel('Counties')
+plt.ylabel('Counties')
+plt.xticks(rotation=45)
+plt.yticks(rotation=0)
+plt.tight_layout()
+plt.show()
