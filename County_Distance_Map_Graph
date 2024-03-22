@@ -1,0 +1,25 @@
+Template I am using to build out the distance maps.
+Will use the driving distance in miles to multiply by the reefer rate on trucking to get very high level understanding of cost between counties.
+Looking to integrate this for every vegetable to see what it would cost to drive 1 pallet from X County to Y County with X being a county with abundance and Y being a county with a deficit.
+
+          Atlantic 	Bergen	Burlington	Camden	Cape May	Cumberland	Essex	Gloucester	Hunterdon	Mercer	Middlesex 	Monmouth	Morris	Ocean	Passaic	Salem	Somerset	Sussex	Union	Warren
+Atlantic 
+Bergen
+Burlington
+Camden
+Cape May
+Cumberland
+Essex
+Gloucester
+Hunterdon
+Mercer
+Middlesex 
+Monmouth
+Morris
+Ocean
+Passaic
+Salem
+Somerset
+Sussex
+Union
+Warren
