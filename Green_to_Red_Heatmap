@@ -18,3 +18,18 @@ plt.xticks(rotation=45)
 plt.yticks(rotation=0)
 plt.tight_layout()
 plt.show()
+
+
+MADE IT EASIER TO SEE:
+
+annot_font_size = 12
+# Create the heatmap
+plt.figure(figsize=(16, 12))
+sns.heatmap(df_with_cost_rounded, annot=True, cmap='RdYlGn_r', fmt=".2f", annot_kws={"size": annot_font_size})
+plt.title('Cost to Drive between New Jersey Counties in Dollars')
+plt.xlabel('Counties')
+plt.ylabel('Counties')
+plt.xticks(rotation=45)
+plt.yticks(rotation=0)
+plt.tight_layout()
+plt.show()
